@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="header container">
       <div class="header__container">
         <img
@@ -45,10 +46,42 @@
           <li class="header__modal__item">About</li>
           <li class="header__modal__item">Client</li>
           <li class="header__modal__item">Partner</li>
+          <div class="header__modaliconBox">
+            <img src="./images/homeIcon.svg" alt="homeIcon" />
+            <img src="./images/emailicon.svg" alt="emailicon" />
+            <img src="./images/twoBro.svg" alt="twobroIcons" />
+          </div>
         </ul>
+        <i id="closeBtn" class="fa-solid fa-xmark"></i>
       </div>
+      <div class="overlay"></div>
     </header>
+    <!-- The end of the header -->
 
+    <!-- Main -->
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Making the most of the ever-growing
+              <span class="hero__tite__red">Information Technology</span>
+            </h1>
+            <p class="hero__text">
+              Managed by a team of professional experts with extensive
+              experience and impressive track records
+            </p>
+            <button class="hero__button">Read More</button>
+            <img
+              class="hero__img"
+              src="./images/heroImg.png"
+              alt="image of person siting with phone"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- The end of the main -->
     <script src="./js/index.js"></script>
   </body>
 </html>
