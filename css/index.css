@@ -1,0 +1,136 @@
+/* Font Sizes */
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v49-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v49-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v49-latin-700.woff2") format("woff2");
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #1f2e35cc;
+}
+
+.header__iconBox {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#hiddenIcon {
+  display: none;
+}
+
+/* Header Modal Styles */
+
+.header__modal {
+  display: none;
+}
+
+.header__modal {
+  width: 300px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: blue;
+  z-index: 999;
+}
+
+.header__modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+
+@media (max-width: 920px) {
+  .header__list {
+    gap: 20px;
+  }
+  .header__iconBox {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 730px) {
+  .header__iconBox {
+    display: none;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  #hiddenIcon {
+    display: flex;
+    font-size: large;
+    align-items: center;
+  }
+}
+
+
