@@ -60,6 +60,7 @@ a {
   margin-right: auto;
 }
 
+/* -------------------------------------------------Header styles */
 .header {
   box-shadow: 0 0 3px 0;
 }
@@ -95,7 +96,7 @@ a {
   display: none;
 }
 
-/* Header Modal Styles */
+/* ------------------------------------------Header Modal Styles */
 
 .header__modal {
   display: none;
@@ -202,7 +203,7 @@ a {
   margin-bottom: 24px;
 }
 
-.hero__title__red {
+span {
   color: #ee4248;
 }
 
@@ -310,5 +311,60 @@ a {
     font-weight: 400;
     border: none;
     border-radius: 4px;
+  }
+}
+
+/* --------------------------------------------infoPage styles */
+.infoPage {
+  background-color: #f6f6f6;
+}
+
+.infoPage__container {
+  display: flex;
+  align-items: start;
+  gap: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.infoPage__img {
+  max-width: 450px;
+  width: 100%;
+}
+
+.infoPage__content {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.infoPage__title {
+  max-width: 450px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 134%;
+  margin-top: 50px;
+}
+
+.infoPage__text,
+.infoPage__secondText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.text__span {
+  color: #ee4248;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/*-------------------------------  InfoPage media style*/
+@media (max-width: 990px) {
+  .infoPage__secondText {
+    display: none;
   }
 }
