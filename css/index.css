@@ -367,4 +367,13 @@ span {
   .infoPage__secondText {
     display: none;
   }
+
+  .infoPage__title {
+    max-width: 450px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    margin-top: 50px;
+  }
 }
